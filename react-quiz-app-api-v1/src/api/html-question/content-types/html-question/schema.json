@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "html_questions_beginners",
+  "collectionName": "html_questions",
   "info": {
-    "singularName": "html-questions-beginner",
-    "pluralName": "html-questions-beginners",
-    "displayName": "htmlQuestions",
-    "description": ""
+    "singularName": "html-question",
+    "pluralName": "html-questions",
+    "displayName": "htmlQuestions"
   },
   "options": {
     "draftAndPublish": true

@@ -362,14 +362,12 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiHtmlQuestionsBeginnerHtmlQuestionsBeginner
-  extends Schema.CollectionType {
-  collectionName: 'html_questions_beginners';
+export interface ApiHtmlQuestionHtmlQuestion extends Schema.CollectionType {
+  collectionName: 'html_questions';
   info: {
-    singularName: 'html-questions-beginner';
-    pluralName: 'html-questions-beginners';
+    singularName: 'html-question';
+    pluralName: 'html-questions';
     displayName: 'htmlQuestions';
-    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -382,13 +380,13 @@ export interface ApiHtmlQuestionsBeginnerHtmlQuestionsBeginner
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
-      'api::html-questions-beginner.html-questions-beginner',
+      'api::html-question.html-question',
       'oneToOne',
       'admin::user'
     > &
       Attribute.Private;
     updatedBy: Attribute.Relation<
-      'api::html-questions-beginner.html-questions-beginner',
+      'api::html-question.html-question',
       'oneToOne',
       'admin::user'
     > &
@@ -812,7 +810,7 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::html-questions-beginner.html-questions-beginner': ApiHtmlQuestionsBeginnerHtmlQuestionsBeginner;
+      'api::html-question.html-question': ApiHtmlQuestionHtmlQuestion;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
