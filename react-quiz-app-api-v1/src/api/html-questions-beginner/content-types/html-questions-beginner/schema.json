@@ -4,7 +4,8 @@
   "info": {
     "singularName": "html-questions-beginner",
     "pluralName": "html-questions-beginners",
-    "displayName": "htmlQuestionsBeginner"
+    "displayName": "htmlQuestions",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,6 +14,12 @@
   "attributes": {
     "question": {
       "type": "string"
+    },
+    "level": {
+      "type": "string"
+    },
+    "options": {
+      "type": "json"
     }
   }
 }

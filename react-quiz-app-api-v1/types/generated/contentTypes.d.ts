@@ -368,13 +368,16 @@ export interface ApiHtmlQuestionsBeginnerHtmlQuestionsBeginner
   info: {
     singularName: 'html-questions-beginner';
     pluralName: 'html-questions-beginners';
-    displayName: 'htmlQuestionsBeginner';
+    displayName: 'htmlQuestions';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     question: Attribute.String;
+    level: Attribute.String;
+    options: Attribute.JSON;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
