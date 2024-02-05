@@ -4,7 +4,8 @@
   "info": {
     "singularName": "html-question",
     "pluralName": "html-questions",
-    "displayName": "htmlQuestions"
+    "displayName": "htmlQuestions",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,9 @@
     },
     "options": {
       "type": "json"
+    },
+    "answer": {
+      "type": "text"
     }
   }
 }

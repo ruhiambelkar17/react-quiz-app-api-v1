@@ -368,6 +368,7 @@ export interface ApiHtmlQuestionHtmlQuestion extends Schema.CollectionType {
     singularName: 'html-question';
     pluralName: 'html-questions';
     displayName: 'htmlQuestions';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -376,6 +377,7 @@ export interface ApiHtmlQuestionHtmlQuestion extends Schema.CollectionType {
     question: Attribute.String;
     level: Attribute.String;
     options: Attribute.JSON;
+    answer: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
