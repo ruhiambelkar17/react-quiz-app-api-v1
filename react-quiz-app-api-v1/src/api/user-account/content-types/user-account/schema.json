@@ -4,7 +4,8 @@
   "info": {
     "singularName": "user-account",
     "pluralName": "user-accounts",
-    "displayName": "UserAccounts"
+    "displayName": "UserAccounts",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,6 +25,9 @@
       "type": "biginteger"
     },
     "password": {
+      "type": "password"
+    },
+    "repeatPassword": {
       "type": "password"
     }
   }
